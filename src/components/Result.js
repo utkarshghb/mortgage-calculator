@@ -24,20 +24,21 @@ const Result = ({ data }) => {
         label: 'Ratio of principle and interest',
         data: [homevalue, totalinterestgenerated],
         backgroundColor: [
-          'rgba(215, 36, 131, 0.5)',
-          'rgba(0, 242, 255, 0.5)',
+          'rgba(255, 0, 0, 0.4)',
+          'rgba(187, 0, 255, 0.5)',
         ],
         borderColor: [
           'rgba(255, 255, 255, 1)',
           'rgba(0, 0, 0, 1)',
         ],
-        borderWidth: 4,
+        borderWidth: 1,
+        
       },
     ],
   };
 
   return (
-    <Stack gap={3}>
+    <Stack gap={3} padding={1}>
       <Typography textAlign='center' variant="h5">
         Monthly Payment: ${monthlyPayment.toFixed(2)}
       </Typography>
